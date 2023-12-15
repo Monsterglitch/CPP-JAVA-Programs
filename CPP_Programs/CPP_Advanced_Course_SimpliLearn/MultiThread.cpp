@@ -1,12 +1,14 @@
-#include<iostream>
-#include<thread>
+// #include<iostream>
+// #include<pthread.h>
 
-void InsideThread() {
-    std::cout<<"Inside Thread!"<<std::endl;
-}
-int main() {
-    std::thread t(InsideThread);
-    t.join();
-    std::cout<<"Main Thread!"<<std::endl;
-    return 0;
-}
+// void *InsideThread() {
+//     std::cout<<"Inside Thread!"<<std::endl;
+// }
+// int main() {
+//     pthread_t tid;
+//     pthread_create(&tid, NULL, &InsideThread, NULL)
+//     pthread_join(tid, NULL)
+
+//     std::cout<<"Main Thread!"<<std::endl;
+//     return 0;
+// }
