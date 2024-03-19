@@ -7,7 +7,7 @@ void insertion(int a[],int n) {
         j=i-1;
         while(j>=0 && a[j]>value){
             a[j+1]=a[j];
-            i=j-1;
+            j=j-1;
         }
         a[j+1]=value;
     }
