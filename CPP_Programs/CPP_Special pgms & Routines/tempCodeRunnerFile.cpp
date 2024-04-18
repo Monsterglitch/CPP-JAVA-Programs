@@ -1,4 +1,3 @@
-for (auto i : res)
-    {
-        cout<<i.first<<"->"<<i.second<<endl;
+i = 0; i < result.size(); i++) {
+        cout << result[i] << " ";
     }
