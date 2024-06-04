@@ -7,18 +7,18 @@ class List {
         T *arr;
         int size,capacity;
     public:
-        List() {
-            size = capacity = 0;
-            arr = new T[capacity];
-        }  
-        /*List(int n) {
+        // List() {
+        //     size = capacity = 0;
+        //     arr = new T[capacity];
+        // }
+        List(int n) {
             capacity = n;size = 0;
             arr = new T[capacity];
-        }*/
-        void getCapacity() {
-            cout<<"Enter the capacity of the list:";
-            cin>>capacity;
         }
+        // void getCapacity() {
+        //     cout<<"Enter the capacity of the list:";
+        //     cin>>capacity;
+        // }
         void append(T val) {
             if(size == capacity) {
                 cout<<"Array is full....";
@@ -59,8 +59,10 @@ class List {
         }
 };
 int main() {
-    List<int> lst;
-    lst.getCapacity();
+    int capac;
+    cout<<"Enter capacity of list: "<<endl;
+    cin>>capac;
+    List<int> lst(capac);
     char ch='y';
     do {
         int choice,temp,pos;
