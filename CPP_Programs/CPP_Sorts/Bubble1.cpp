@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 void bubble(int a[], int n){
-    for(int i=0;i<n;i++){ //for n-1 passes
+    for(int i=0;i<n-1;i++){ //for n-1 passes
         int flag = 0; //flag is used for finding redundant passes
         for(int j=0;j<n-i-1;j++){ //in the later passes the last few positions 
         // are sorted to decrease the time complexity from O(n^2) -> O(n)
@@ -11,8 +11,8 @@ void bubble(int a[], int n){
                 flag=1; //flag is set 1 to indicate that swap has happened
             }
         }
-    if(flag==0) //flag is 0 if no swap was made
-        break; //this means that the array is sorted in the last pass so break
+        if(flag==0) //flag is 0 if no swap was made
+            break; //this means that the array is sorted in the last pass so break
     }
 }
 void swap(int x, int y){
