@@ -1,0 +1,156 @@
+Sum of Digits of a Five Digit Number:
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+	
+    int n, rem = 0;
+    scanf("%d", &n);
+    //Complete the code to calculate the sum of the five digits on n.
+    while (n > 0) {
+        rem += n % 10;
+        n = n / 10;
+    }
+    printf("%d", rem);
+    return 0;
+}
+
+Students Marks Sum:
+
+int marks_summation(int* marks, int number_of_students, char gender) {
+    int sum = 0, i = 0;
+    if (gender == 'b') {
+        while(i < number_of_students) {
+            sum += *marks;
+            marks = marks + 2;
+            i += 2;
+        }
+    }
+    else {
+        i = 1;
+        marks = marks + 1;
+        while(i < number_of_students) {
+            sum += *marks;
+            marks = marks + 2;
+            i += 2;
+        }
+    }
+    return sum;
+}
+
+Digit Frequency:
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char s[1000];
+    int freq[10] = {0};
+
+    scanf("%[^\n]", s);
+    for (int i = 0; i < strlen(s); i++) {
+        if (s[i] >= '0' && s[i] <= '9') {
+            freq[s[i] - '0']++;
+        }
+    }
+
+    for (int i = 0; i < 10; i++) {
+        printf("%d ", freq[i]);
+    }
+    return 0;
+}
+
+Product of Prime:
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int PPF(int n) {
+    int product = 1;
+    if (n % 2 == 0) {
+        product *= 2;
+        while (n % 2 == 0) {
+            n /= 2;
+        }
+    }
+    for (int i = 3; i <= std::sqrt(n); i += 2) {
+        if (n % i == 0) {
+            product *= i;
+            while (n % i == 0) {
+                n /= i;
+            }
+        }
+    }
+    if (n > 2) {
+        product *= n;
+    }
+    return product;
+}
+
+int main() {
+    int n;
+    cin>>n;
+    cout<<PPF(n);
+    return 0;
+}
+
+Pattern New:
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    if (n > 100) {
+        printf("Invalid input");
+    } else {
+        for (int i = 0; i < n; i++) {  
+            for (int j = 0; j < 2 * (n - i) - 1; j++) { 
+                if (j == 0) {
+                    continue;
+                } else {
+                    printf(" ");    
+                }
+            } 
+            for (int k = 0; k <= i; k++) { 
+                printf("%d ", k+1); 
+            } 
+            printf("\n"); 
+        } 
+    }
+    return 0;
+}
+
+Printing frequency of each character just after its consecutive occurrences:
+
+int main() {
+    string s;
+    cin>>s;
+    
+    for (int i = 0; s[i] != '\0'; i++) {
+        int count = 1;
+        while (s[i] == s[i + 1]) {
+            i++;
+            count++;
+        }
+        cout << s[i] << count << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}

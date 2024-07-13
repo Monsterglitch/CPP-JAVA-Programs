@@ -1,0 +1,56 @@
+1) (LeetCode) Max area in Histogram.
+2) (LeetCode) rotten oranges.
+3) In the enchanted forest, Alex has discovered a magical tree with n nodes, labeled from 1 to n. This tree is a connected, acyclic graph with n-1 branches. Each node has a maximum of 3 connections, except the root (node 1), which has up to 2 connections.
+
+Unfortunately, the root node is cursed.
+
+Over n phases, Alex can:
+
+1. Choose a non-cursed and non-removed node and remove it along with its connections, or
+
+2. Do nothing.
+
+After each phase, the curse spreads to all nodes directly connected to already cursed nodes. Alex's goal is to maximize the number of nodes that remain uncursed (removed nodes are not counted as saved).
+
+Help Alex determine the maximum number of nodes he can save from the curse.
+
+Examples:
+
+Input:
+4
+
+1 2
+
+2 3
+
+2 4
+
+Output:
+
+2
+
+Explanation:
+
+If we delete vertex 2 we can save vertices 3 and 4.
+Input/Output
+
+• [execution time limit] 0.5 seconds (cpp)
+
+• [memory limit] 1 GB
+
+• [input] integer n
+
+Number of vertices in the tree.
+
+Guaranteed constraints: 2 ≤ n ≤ 3*105
+
+• [input] array.array.integer edgeList
+
+Each sub-list represents an edge and contains exactly two integers. The integers represent the vertices connected by the edge. For e.g: edgeList[i] represent the undirected edge between edgeList[i][0] and edgeList[i][1]
+
+Guaranteed constraints: 1 s edgeList[i][0], edgeList[i][1] ≤ n
+
+• [output] integer
+
+Output the maximum number of vertices Alex can save.
+2) 

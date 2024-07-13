@@ -1,6 +1,7 @@
 {
     "files.trimTrailingWhitespace": true,
     "files.associations": {
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "string": "cpp"
     }
 }
