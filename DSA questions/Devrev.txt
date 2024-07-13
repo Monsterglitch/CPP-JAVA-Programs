@@ -1,5 +1,7 @@
 1) (LeetCode) Max area in Histogram.
+
 2) (LeetCode) rotten oranges.
+
 3) In the enchanted forest, Alex has discovered a magical tree with n nodes, labeled from 1 to n. This tree is a connected, acyclic graph with n-1 branches. Each node has a maximum of 3 connections, except the root (node 1), which has up to 2 connections.
 
 Unfortunately, the root node is cursed.
@@ -53,4 +55,30 @@ Guaranteed constraints: 1 s edgeList[i][0], edgeList[i][1] ≤ n
 • [output] integer
 
 Output the maximum number of vertices Alex can save.
-2) 
+
+4) In preparation for a sports tournament, you have n training exercises available. Completing the i-th exercise improves your skills by arr[i] points. You can only perform one exercise per day, and once you complete an exercise, you must wait k days before repeating it. For example, if k=2 and you perform exercise 1 on day 1, you cannot repeat it on days 2 and 3, but can do it again on day 4.
+
+Given two targets: achieve at least c skill points within d days. Determine the maximum k that allows you to meet this goal. If no such k exists or k is arbitrarily large, output -1.
+
+Examples:
+
+Input:
+
+2 5 4
+
+1 2
+
+Output: 2
+
+Explanation:
+
+In the given example, one way to gain 5 skill point over 4 days with K=2 is as follows:
+Day 1: do exercise 2, and gain 2 skill points.
+
+Day 2: do exercise 1, and gain 1 skill points.
+
+Day 3: do nothing.
+
+Day 4: do exercise 2, and gain 2 skill points.
+
+In total, we gained 2+1+2=5 skill points.
