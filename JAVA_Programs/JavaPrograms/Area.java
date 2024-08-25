@@ -1,3 +1,4 @@
+package JavaPrograms;
 import java.util.Scanner;
 
 class square{
